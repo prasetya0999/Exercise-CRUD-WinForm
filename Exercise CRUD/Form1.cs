@@ -44,5 +44,10 @@ namespace Exercise_CRUD
             this.tbMasukTableAdapter.Fill(this.hRDataSet.tbMasuk);
 
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

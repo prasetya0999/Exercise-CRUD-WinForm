@@ -251,6 +251,7 @@ namespace Exercise_CRUD
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Data Kandang";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaru)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMasukBindingSource)).EndInit();
