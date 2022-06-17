@@ -33,8 +33,22 @@ namespace Exercise_CRUD
             con.Close();
             MessageBox.Show("Data Berhasil di Simpan!");
         }
-        private void button2_Click(object sender, EventArgs e)
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-C5A9RCLU\\PRASETYAAGUNGP;Initial Catalog=HR;Integrated Security=True");
             con.Open();
             SqlCommand cmd = new SqlCommand("Update tbKeluar set Jenis = @Jenis, Bobot =@Bobot, Harga=@Harga,Tanggal Beli = @Tanggal_Beli where Id_Sapi = @Id_Sapi", con);
@@ -72,18 +86,6 @@ namespace Exercise_CRUD
             sda.Fill(dtb);
 
             dgvLaku.DataSource = dtb;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
-        }
-
-        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

@@ -177,6 +177,7 @@ namespace Exercise_CRUD
             this.button4.TabIndex = 31;
             this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -188,6 +189,7 @@ namespace Exercise_CRUD
             this.button3.TabIndex = 30;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -199,6 +201,7 @@ namespace Exercise_CRUD
             this.button2.TabIndex = 29;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // pictureBox1
             // 
